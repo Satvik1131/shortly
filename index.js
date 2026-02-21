@@ -13,7 +13,7 @@ const userroute=require('./routes/user');
 const app=express();
 const port=8001;
 
-connectToMongoDB(process.env.MONGO_URI)
+connectToMongoDB("mongodb+srv://satvik07:nPLVFdgyRds1KUQr@cluster0.asikfwl.mongodb.net/")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error:", err));
 
